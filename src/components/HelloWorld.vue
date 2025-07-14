@@ -8,17 +8,20 @@ defineProps({
 </script>
 
 <template>
-  <div class="greetings">
+  <div class="main_block">
     <h1 class="green">{{ msg }}</h1>
     <h3>
-      You’ve successfully created a project with
-      <a href="https://vite.dev/" target="_blank" rel="noopener">Vite</a> +
-      <a href="https://vuejs.org/" target="_blank" rel="noopener">Vue 3</a>.
+      You’ve successfully created a project!!
     </h3>
   </div>
 </template>
 
 <style scoped>
+.main_block {
+  border-style: dotted;
+  border-color: blueviolet;
+}
+
 h1 {
   font-weight: 500;
   font-size: 2.6rem;
@@ -30,15 +33,9 @@ h3 {
   font-size: 1.2rem;
 }
 
-.greetings h1,
+/* .greetings h1,
 .greetings h3 {
   text-align: center;
-}
+} */
 
-@media (min-width: 1024px) {
-  .greetings h1,
-  .greetings h3 {
-    text-align: left;
-  }
-}
 </style>
